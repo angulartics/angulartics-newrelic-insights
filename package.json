@@ -1,0 +1,40 @@
+{
+  "name": "angulartics-newrelic-insights",
+  "version": "0.1.0",
+  "description": "New Relic Insights plugin for Angulartics",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "build": "mkdir -p dist && uglifyjs lib/angulartics-newrelic-insights.js --compress --source-map dist/angulartics-newrelic-insights.min.js.map --source-map-root .. --source-map-url ../dist/angulartics-newrelic-insights.min.js.map -o dist/angulartics-newrelic-insights.min.js",
+    "test": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prestonvanloon/angulartics-newrelic-insights.git"
+  },
+  "keywords": [
+    "angular",
+    "angulartics",
+    "plugin",
+    "new",
+    "relic",
+    "insights"
+  ],
+  "author": "Preston Van Loon <preston@machinepowered.com> (https://github.com/prestonvanloon)",
+  "contributors": [
+    "Luis Farzati <lfarzati@gmail.com> (https://github.com/luisfarzati)",
+    "Jakub Hampl (http://gampleman.eu)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prestonvanloon/angulartics-newrelic-insights/issues"
+  },
+  "homepage": "https://github.com/prestonvanloon/angulartics-newrelic-insights#readme",
+  "peerDependencies": {
+    "angulartics": "~1.0.0"
+  },
+  "devDependencies": {
+    "uglify-js": "^2.6.2"
+  }
+}
