@@ -1,0 +1,10 @@
+language: node_js
+
+deploy:
+  provider: npm
+  email: preston@machinepowered.com
+  api_key:
+    secure: CzgyZzCu59NbngfwG1Cj/6pFAvYtUiIJj4EFThRQT514A/MaPInKtjQFg8RIempCP6veYbDYqsdkcn9ufF3GMSNcjbam1BBVEZfyImrghWhyOHr2QOy27a+/jmeamoF+U35jR9yE1TgLsJK9y3eS9dVZ/d7vacM9ULQuoQ9Y3P3eu2fAsa8L6+iYrBRjifcspjkDt4Aa5OojbAjcW4dM0TBg1PrMEdXnTUf/zcbX0gMQNbZ8FRcmY25387q4D+lCFlk8wA2TlQ5bTt24Z4Ig/F7eHGlJroeNJbPuD7hgTbHZrWVoW92tMAQyz+9LN1PvYAIO9HrbPy6Yz5fepCI7r34qTL9QuosMAbfjl7m+seEjsyu4jUUnf/kgzlglbM6nbXp+2GK7wd6EgRBqvgT1T/moKxO3uR9gC396JfnUtcktfIWmKh7w/LMrPb1vK18nU3jw6wu2gwijweWLLDa6Gwn2b3MwggWFA3VUo3X3NwrlBvLpSpWK7UmJC+vtTuMoV0837U6kEp5k9nIDwZdMGILQP8jx45cqPUvS+eba3Q7nb17Fzk84IMSA65r6S0STQOhV7mcvCg32uqv1dzCfATufALxaGC2NqBpEnnWlSEdwp0liaJ/gJqjh0FokeXx7nQA6X5CY8ibmm8eG8/W1DvDPmJORJs0pPd8EBRhbED4=
+  on:
+    tags: true
+    repo: angulartics/angulartics-newrelic-insights
